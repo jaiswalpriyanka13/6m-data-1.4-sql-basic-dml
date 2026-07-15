@@ -45,7 +45,7 @@ Open DbGate and create a new connection to `db/unit-1-4.db`.
 >
 > | Column Name | Data Type | Description |
 > |-------------|-----------|-------------|
-> | month | Datetime (Month) "YYYY-MM" | Transaction month |
+> | month | Text "YYYY-MM" | Transaction month |
 > | town | Text | Town name |
 > | flat_type | Text | Type of flat |
 > | block | Text | Block number |
