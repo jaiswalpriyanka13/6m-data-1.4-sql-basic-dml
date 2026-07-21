@@ -102,7 +102,7 @@ ORDER BY
   resale_price DESC;
 ```
 
-👋 **Exercise:**
+👋 **Exercise 1:**
 - Select any 3 columns from the table.
 - Select flats from highest to lowest resale price in Punggol.
 
@@ -162,7 +162,7 @@ ORDER BY
   resale_price DESC;
 ```
 
-👋👋👋 **Group Exercise:**
+👋👋👋 **Group Exercise 2:**
 
 - "I want to find a home for my parents. They need something larger than 100sqm, but my budget is strictly under $600,000. How would we write that rule?"
 - Define your own filter for flats in a specific town, with a price range and floor area requirement etc. Then sort the results by resale price (highest first) and floor area (largest first).
@@ -194,7 +194,7 @@ WHERE
   town = 'BUKIT MERAH';
 ```
 
-👋 **Exercise — basic filters:**
+👋 **Exercise 3 — basic filters:**
 - Select flats with floor area greater than 100 sqm.
 - Select flats with resale price between 400,000 and 500,000.
 - Select flats with lease commence date later than year 2000 and floor area greater than 100 sqm.
@@ -218,7 +218,7 @@ WHERE town LIKE 'B%';
 SELECT DISTINCT town FROM resale_flat_prices_2017;
 ```
 
-👋 **Exercise:**
+👋 **Exercise 4:**
 - Return the unique flat types and flat models.
 - Find all towns starting with "P".
 
@@ -313,7 +313,7 @@ GROUP BY
   town;
 ```
 
-👋 **Exercise:**
+👋 **Exercise 5:**
 - Select the average resale price of flats in Bishan.
 - Select the total resale value (price) of flats in Tampines.
 
@@ -406,12 +406,12 @@ GROUP BY
   town, lease_commence_date;
 ```
 
-👋👋👋 **Group Exercise:**
+👋👋👋 **Group Exercise 6:**
 - Select the average resale price by flat type.
 - Select the average resale price by flat type and flat model.
 - Select the average resale price by town and lease commence date, only for lease commence dates after year 2010, sorted by town (descending) and lease commence date (descending).
 
-👋 **Exercise — HAVING:**
+👋👋👋 **Group Exercise 7 — HAVING:**
 - Count transactions per town, then show only towns with more than 5,000 transactions.
 - Show the average floor area per flat type, but only for flat types whose average floor area is above 90 sqm.
 - Find towns where the maximum resale price exceeds $900,000, sorted highest first. (Hint: filter on `MAX(resale_price)` in `HAVING`.)
@@ -464,7 +464,7 @@ FROM
   resale_flat_prices_2017;
 ```
 
-👋👋👋 **Group Exercise:**
+👋👋👋 **Group Exercise 8:**
 - Design your own "budget/mid/high-end" categories based on resale_price.
 - Design a "old vs new" label based on lease_commence_date.
 
@@ -516,7 +516,7 @@ FROM resale_flat_prices_2017;
 
 > **Question:** "If the `month` column is text `'2017-01'`, can we add 1 month to it directly? Why do we need to `CAST` it to a `DATE` type first?"
 
-👋 **Exercise — CAST:**
+👋👋👋 **Group Exercise 9 — CAST:**
 - Show `resale_price` rounded down to the nearest thousand by casting to `INTEGER` (e.g. `resale_price / 1000` cast to `INTEGER`, then `* 1000`).
 - Convert the text `month` column to a real `DATE` and extract the transaction month number (1–12).
 - Cast `floor_area_sqm` to `INTEGER` and show it next to the original value — what happens to the decimals?
