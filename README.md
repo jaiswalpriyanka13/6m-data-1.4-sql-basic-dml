@@ -41,3 +41,5 @@ By the end of this lesson, you will be able to:
 - **[DuckDB](https://duckdb.org):** In-process analytical database engine.
 - **[DbGate](https://dbgate.org):** Free, cross-platform database manager.
 - **Dataset:** `unit-1-4.db` — Singapore HDB resale flat prices (2017). Download link in [pre-class.md](./pre-class.md).
+
+Hello World
